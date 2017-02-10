@@ -1,8 +1,8 @@
 {%set name = "parsedatetime" %}
-{%set version = "2.1" %}
+{%set version = "2.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "17c578775520c99131634e09cfca5a05ea9e1bd2a05cd06967ebece10df7af2d" %}
+{%set hash_val = "1b1b647812e336f85be84206e4fb1f2df3852e036ac35b18dec809e7ebff1309" %}
 {%set build_num = "0" %}
 
 package:
@@ -22,6 +22,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
 
   run:
     - python
