@@ -1,8 +1,8 @@
 {%set name = "parsedatetime" %}
-{%set version = "2.2" %}
+{%set version = "2.3" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "1b1b647812e336f85be84206e4fb1f2df3852e036ac35b18dec809e7ebff1309" %}
+{%set hash_val = "94ca3c9efcf2652a7a8ee6b11983e7344988a3c658fd617f8021689446ab79ee" %}
 {%set build_num = "0" %}
 
 package:
