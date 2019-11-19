@@ -1,9 +1,9 @@
 {% set name = "parsedatetime" %}
-{% set version = "2.4" %}
+{% set version = "2.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "3d817c58fb9570d1eec1dd46fa9448cd644eeed4fb612684b02dfda3a79cb84b" %}
-{% set build = 1 %}
+{% set hash = "d2e9ddb1e463de871d32088a3f3cea3dc8282b1b2800e081bd0ef86900451667" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ source:
 build:
   noarch: python
   number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
