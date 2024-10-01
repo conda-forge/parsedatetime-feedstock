@@ -2,7 +2,7 @@
 {% set version = "2.6" %}
 {% set bundle = "tar.gz" %}
 {% set hash = "4cb368fbb18a0b7231f4d76119165451c8d2e35951455dfee97c62a87b04d455" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
     - pytest-runner
 
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/bear/parsedatetime
   license_file: LICENSE.txt
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   summary: Parse human-readable date/time text.
   dev_url: https://github.com/bear/parsedatetime
